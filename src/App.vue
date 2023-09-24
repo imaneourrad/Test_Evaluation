@@ -1,7 +1,18 @@
 <template>
- 
+<v-app>
+<NavBar />
+  <router-view />
+  </v-app>
 </template>
 
-<style>
+<script lang="ts">
+import Vue from 'vue';
 
-</style>
+export default Vue.extend({
+  name: 'App',
+
+  data: () => ({
+    //
+  }),
+});
+</script>
